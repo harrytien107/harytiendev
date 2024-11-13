@@ -2,7 +2,7 @@
     cursor: url('image/cursor'), auto;} */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
     /* Đổi nền thành màu đen */
     text-align: center;
@@ -23,6 +23,13 @@ body {
 
 h1 {
     font-size: 45px;
+    /* Tăng kích thước chữ */
+    color: #fff;
+    /* Đổi chữ thành trắng */
+    margin: 20px;
+}
+h2 {
+    font-size: 35px;
     /* Tăng kích thước chữ */
     color: #fff;
     /* Đổi chữ thành trắng */
@@ -71,7 +78,7 @@ p {
     /* Đổi chữ thành trắng */
 }
 
-/* .play-button {
+    .play-button {
     background: none;
     border: none;
     cursor: pointer;
@@ -129,50 +136,5 @@ p {
 .random-button.active {
     font-size: 30px;
     font-weight: bold;
-} */
+} 
 
-.controls {
-    margin-top: 20px;
-}
-
-.play-button,
-.more-play-button,
-.loop-button,
-.random-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin: 0 10px;
-    font-size: 40px;
-}
-
-.play-button.active,
-.more-play-button.active,
-.loop-button.active,
-.random-button.active {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: 1;
-    transition: transform 0.1s ease;
-    pointer-events: auto;
-}
-
-.progress-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-}
-
-#progressBar {
-    width: 100%;
-    cursor: pointer;
-}

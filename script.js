@@ -1,6 +1,10 @@
 const songs = [
     // 'music/theme02.mp3',
     'music/anhbibui.mp3',
+    'music/0.mp3',
+    'music/1.mp3',
+    'music/2.mp3',
+    'music/3.mp3',
 ];
 
 let currentIndex = 0;
@@ -9,7 +13,6 @@ let isRandomPlaying = false; // Thêm biến để theo dõi phát ngẫu nhiên
 let audio = document.createElement('audio');
 let isPlaying = false;
 
-const progressBar = document.getElementById('progressBar');
 
 audio.addEventListener('ended', function() {
     if (isLooping) {
@@ -125,3 +128,4 @@ progressBar.addEventListener('input', () => {
     const seekTime = (progressBar.value / 100) * audio.duration;
     audio.currentTime = seekTime;
 });
+
